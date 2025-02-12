@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OshoGPT - Enlightened Digital Wisdom</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OshoGPT</h1>
+            <h2>Enlightened wisdom for the digital seeker</h2>
+            <div class="thinking-toggle dropdown-toggle" id="thinking-toggle">
+                <span><i class="fas fa-brain"></i> Thinking</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-history" class="chat-history">
+                <div class="osho-message">
+                    <div class="avatar">
+                        <img src="static/images/osho.jpeg" alt="Osho">
+                    </div>
+                    <div class="message">
+                        <p>Welcome, seeker. The fact that you have found me is not coincidental—perhaps it is your soul that has been searching. Ask your question, and I will share divine nonsense that may unlock something within you. Remember, the answer you seek is rarely the answer you need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="user-input" placeholder="Ask a question that troubles your soul..."></textarea>
+                <button id="send-button" aria-label="Send message"></button>
+            </div>
+        </div>
+
+        <footer>
+            <p>In silence lies the answer, in words merely the echo of truth 🧘‍♂️</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

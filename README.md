@@ -97,10 +97,6 @@ python main.py
 
 Feel free to submit issues and enhancement requests!
 
-## License 📄
-
-[Your chosen license]
-
 ## Acknowledgments 🙏
 
 - Inspired by Osho's teachings and wisdom
